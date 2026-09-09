@@ -4,22 +4,22 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
-<title>Gasan Omer | Flutter &amp; Full-Stack Software Engineer</title>
-<meta content="Gasan Omer is a Flutter Mobile Developer and Full-Stack Software Engineer in the UAE, building production mobile, web and backend systems including Cave, iPark, Estheva and Vactals." name="description"/>
+<title>Gasan Omer | Flutter Engineer &amp; Mobile Software Engineer</title>
+<meta content="Gasan Omer is a Flutter Engineer and mobile software engineer in the UAE, building production iOS and Android apps with Flutter and Dart — Cave Health, iPark, Cave, Estheva and Vactals — with AI-assisted engineering and full-stack depth behind them." name="description"/>
 <meta content="Gasan Mansour Omer" name="author"/>
 <link href="https://gasanomer.com/" rel="canonical"/>
 <meta content="website" property="og:type"/>
-<meta content="Gasan Omer | Flutter &amp; Full-Stack Software Engineer" property="og:title"/>
-<meta content="Production mobile, web, backend and AI-assisted engineering — real products, real systems, shipped." property="og:description"/>
+<meta content="Gasan Omer | Flutter Engineer &amp; Mobile Software Engineer" property="og:title"/>
+<meta content="Production Flutter engineering — iOS and Android apps, mobile architecture, release delivery and AI-assisted workflows." property="og:description"/>
 <meta content="https://gasanomer.com/" property="og:url"/>
 <meta content="Gasan Omer" property="og:site_name"/>
 <meta content="https://gasanomer.com/og.jpg" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="Gasan Omer | Flutter &amp; Full-Stack Software Engineer" name="twitter:title"/>
+<meta content="Gasan Omer | Flutter Engineer &amp; Mobile Software Engineer" name="twitter:title"/>
 <meta content="I build digital systems that live in people's hands." name="twitter:description"/>
 <meta content="#050806" name="theme-color"/>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Gasan Mansour Omer","alternateName":"Gasan Omer","jobTitle":"Flutter Mobile Developer & Full-Stack Software Engineer","email":"mailto:gasan1288@gmail.com","telephone":"+971545671677","url":"https://gasanomer.com/","address":{"@type":"PostalAddress","addressCountry":"AE"},"sameAs":["https://github.com/Gasan33","https://www.linkedin.com/in/gasan-mansour"],"knowsAbout":["Flutter","Dart","BLoC","Clean Architecture","ASP.NET Core","Laravel","Next.js","React","WebRTC","SignalR","Docker","CI/CD"],"worksFor":{"@type":"Organization","name":"Cave Technologies (ICAD Holding)"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Science and Technology, Omdurman"}}
+{"@context":"https://schema.org","@type":"Person","name":"Gasan Mansour Omer","alternateName":"Gasan Omer","jobTitle":"Flutter Engineer","email":"mailto:gasan1288@gmail.com","telephone":"+971545671677","url":"https://gasanomer.com/","address":{"@type":"PostalAddress","addressCountry":"AE"},"sameAs":["https://github.com/Gasan33","https://www.linkedin.com/in/gasan-mansour"],"knowsAbout":["Flutter","Dart","BLoC","Cubit","Clean Architecture","iOS","Android","REST APIs","Firebase","Mobile release engineering","AI-assisted engineering","ASP.NET Core","Laravel","Next.js","React","WebRTC","SignalR","Docker","CI/CD"],"worksFor":{"@type":"Organization","name":"Cave Technologies (ICAD Holding)"},"alumniOf":{"@type":"CollegeOrUniversity","name":"University of Science and Technology, Omdurman"}}
 </script>
 <style>
 :root{
@@ -67,6 +67,9 @@ footer{position:relative;z-index:3;background:var(--ink);padding:24px var(--gut)
 .hero-sub{position:absolute;left:50%;translate:-50% 0;top:calc(50% + clamp(152px,27vh,310px));
   z-index:5;text-align:center;width:max-content;max-width:86vw}
 .hero-sub .lede{margin:0 auto;max-width:24ch}
+.hero-role{margin:14px auto 0;font-size:.56rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--dust);max-width:34ch}
+@media (max-width:430px){.hero-role{font-size:.5rem;letter-spacing:.18em}}
 .hero-coords{display:flex;gap:clamp(14px,3vw,34px);justify-content:center;margin-top:20px}
 .hero-coords span{font-family:var(--mono);font-size:.56rem;letter-spacing:.26em;color:var(--signal);
   opacity:.85}
@@ -193,6 +196,110 @@ footer{position:relative;z-index:3;background:var(--ink);padding:24px var(--gut)
     rgba(95,227,161,.07))}
 .device .shadow{position:absolute;left:6%;right:6%;bottom:-9%;height:8%;border-radius:50%;
   background:radial-gradient(closest-side,rgba(0,0,0,.75),transparent);filter:blur(9px)}
+
+/* ── Cave Health ──────────────────────────────────────────────
+   Its own identity inside the same environment: charcoal rather than
+   forest, and cyan held back for the wellness read-outs only. The
+   rings, the trace and the watch are drawn decoration — the phone
+   screens are the real application. */
+#health{--pulse:#5fd8e3}
+#health .chapter-name{font-size:clamp(2.4rem,8.6vw,7rem);line-height:.9;max-width:60vw}
+#health .pin{background:radial-gradient(86% 70% at 60% 42%,#0c1614,#080c0d 58%,#05080a);
+  perspective:1500px}
+.health-glow{position:absolute;left:58%;top:44%;width:62vmax;height:62vmax;translate:-50% -50%;
+  border-radius:50%;filter:blur(70px);opacity:.5;z-index:0;pointer-events:none;will-change:transform;
+  background:radial-gradient(circle,rgba(31,143,98,.32),rgba(95,216,227,.10) 46%,transparent 70%)}
+.health-rings{position:absolute;left:58%;top:44%;width:min(74vmin,700px);aspect-ratio:1;
+  translate:-50% -50%;z-index:1;pointer-events:none}
+.health-rings circle{fill:none;stroke-linecap:round;transform:rotate(-90deg);transform-origin:50% 50%}
+.health-rings .trk{stroke:rgba(236,233,225,.055);stroke-width:2.4}
+.health-rings .move{stroke:var(--signal);stroke-width:2.8}
+.health-rings .rest{stroke:var(--pulse);stroke-width:2.2;opacity:.72}
+.health-ecg{position:absolute;left:0;right:0;top:52%;height:clamp(80px,14vh,150px);translate:0 -50%;
+  z-index:1;pointer-events:none;opacity:.55}
+.health-ecg path{fill:none;stroke:var(--pulse);stroke-width:1.1;
+  filter:drop-shadow(0 0 6px rgba(95,216,227,.4))}
+
+.health-metrics{position:absolute;inset:0;z-index:6;pointer-events:none}
+.health-metrics b{position:absolute;display:grid;gap:3px;opacity:0;font-weight:400;
+  font-family:var(--mono);will-change:transform,opacity}
+.health-metrics em{font-style:normal;font-size:.44rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--dust)}
+.health-metrics i{font-style:normal;font-size:.86rem;letter-spacing:.05em;color:var(--pulse)}
+
+.health-stage{position:absolute;inset:0;z-index:5;display:grid;place-items:center end;
+  padding-right:clamp(20px,13vw,240px);perspective:1500px}
+.health-devices{display:flex;align-items:center;gap:clamp(10px,1.8vw,26px);
+  transform-style:preserve-3d;will-change:transform,opacity}
+.health-devices .device .screen img{position:absolute;inset:0;width:100%;height:100%;
+  object-fit:cover;object-position:center top;opacity:0;transition:opacity .5s ease;
+  will-change:opacity}
+.health-devices .device .screen img.on{opacity:1}
+.health-devices .d1,.health-devices .d3{--dw:clamp(96px,11vw,166px);opacity:.72}
+.health-devices .d2{--dw:clamp(126px,15vw,222px);z-index:2}
+
+.health-watch{position:absolute;right:clamp(16px,7vw,118px);bottom:clamp(78px,15vh,168px);
+  width:clamp(74px,8.5vw,124px);z-index:6;opacity:0;will-change:transform,opacity}
+.health-watch svg{width:100%;height:auto;display:block;overflow:visible}
+.health-watch .band{fill:#141d1a}
+.health-watch .shell{fill:#0a1210;stroke:rgba(236,233,225,.18);stroke-width:2}
+.health-watch .face{fill:#050b09}
+.health-watch .arc{fill:none;stroke-width:5;stroke-linecap:round;transform:rotate(-90deg);
+  transform-origin:50% 50%}
+.health-watch .a1{stroke:var(--signal)}
+.health-watch .a2{stroke:var(--pulse);opacity:.85}
+
+.health-copy{position:absolute;left:var(--gut);bottom:clamp(52px,10vh,110px);z-index:7;
+  max-width:min(40ch,42vw)}
+.health-copy .lead{font-size:clamp(.95rem,1.5vw,1.1rem);line-height:1.6;color:#c3ccc7;
+  margin-bottom:16px}
+.health-spec{display:grid;gap:7px;margin-bottom:16px}
+.health-spec div{display:grid;grid-template-columns:8.5ch 1fr;gap:12px;opacity:0;
+  will-change:transform,opacity}
+.health-spec b{font-family:var(--mono);font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--signal);font-weight:400;padding-top:3px}
+.health-spec span{font-size:.84rem;line-height:1.55;color:#a9b4ae}
+.health-note{font-family:var(--mono);font-size:.46rem;letter-spacing:.16em;color:var(--dust);
+  text-transform:uppercase;margin-top:12px;opacity:.75}
+#health .shot-index{position:absolute;right:var(--gut);bottom:clamp(52px,10vh,110px);z-index:7;
+  display:flex;gap:6px;align-items:center;opacity:0}
+#health .shot-index i{width:16px;height:2px;background:rgba(236,233,225,.18);border-radius:2px;
+  transition:background .4s,width .4s}
+#health .shot-index i.on{background:var(--signal);width:26px}
+
+@media (max-width:900px){
+  .health-stage{place-items:start center;padding:18vh 0 0}
+  .health-devices .d1,.health-devices .d3{display:none}
+  .health-devices .d2{--dw:min(190px,49vw)}
+  .health-watch{right:auto;left:50%;translate:-50% 0;bottom:auto;top:14vh;
+    width:clamp(58px,16vw,84px)}
+  .health-metrics{display:none}
+  .health-rings{width:min(96vmin,540px);top:38%;left:50%}
+  .health-copy{left:0;right:0;bottom:0;max-width:none;
+    padding:20vh var(--gut) clamp(66px,10vh,96px);
+    background:linear-gradient(180deg,transparent,rgba(4,9,7,.93) 30%,rgba(4,9,7,.99))}
+  .health-copy .lead{font-size:.86rem}
+  .health-spec span{font-size:.78rem}
+  #health .shot-index{right:auto;left:var(--gut);bottom:clamp(26px,5vh,50px)}
+}
+@media (max-width:430px),(max-height:700px){
+  .health-copy{padding-top:26vh}
+  .health-copy .lead{font-size:.8rem;line-height:1.55}
+  .health-spec{gap:5px;margin-bottom:12px}
+}
+@media (prefers-reduced-motion:reduce){
+  .health-stage{position:static;padding:20px 0;place-items:center}
+  .health-devices{justify-content:center;flex-wrap:wrap}
+  .health-devices .device{opacity:1!important;--dw:min(180px,42vw)}
+  .health-devices .device .screen img{position:absolute;opacity:0}
+  .health-devices .device .screen img.on{opacity:1}
+  .health-copy{position:static;max-width:none;padding:0 var(--gut);margin-top:20px;background:none}
+  .health-spec div{opacity:1!important;transform:none!important}
+  .health-watch{position:static;opacity:1!important;transform:none!important;
+    width:96px;margin:22px var(--gut) 0}
+  .health-glow,.health-ecg,.health-metrics,#health .shot-index{display:none}
+  .health-rings{position:static;translate:none;width:min(60vw,320px);margin:20px auto 0}
+}
 
 /* ── iPark ── */
 #ipark .pin{background:#03080a}
@@ -971,8 +1078,6 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
    strip that needed to go, not this. */
 .dive-rail{opacity:0;animation:diveIn 1s .4s cubic-bezier(.16,1,.3,1) forwards}
 
-}
-
 
 /* ══════════════ CAVE — rebuilt to match the flagship layout ══════════════
    It was centred, which put the title and the paragraph on top of the
@@ -1119,6 +1224,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 <a href="#identity"><span>Identity</span><i></i></a>
 <a href="#stack"><span>Stack</span><i></i></a>
 <a href="#depthscene"><span>Systems</span><i></i></a>
+<a href="#health"><span>Health</span><i></i></a>
 <a href="#ipark"><span>Work</span><i></i></a>
 <a href="#ai"><span>AI</span><i></i></a>
 <a href="#journey"><span>Journey</span><i></i></a>
@@ -1138,8 +1244,9 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 </div>
 <div class="hero-sub">
 <p class="lede">I build digital systems that live in people's hands.</p>
+<p class="mono hero-role">Flutter Engineer · Mobile Software Engineer · AI-First Development</p>
 <div class="hero-coords">
-<span>Mobile</span><span>Web</span><span>Backend</span><span>AI</span>
+<span>Flutter</span><span>iOS &amp; Android</span><span>Architecture</span><span>AI</span>
 </div>
 </div>
 <div aria-hidden="true" class="scrollhint"><span class="mono">Scroll to descend</span><i></i></div>
@@ -1153,7 +1260,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 <div aria-hidden="true" class="idt-words"><b>Mobile.</b><b>Systems.</b><b>Experiences.</b></div>
 <div class="idt-copy">
 <h2>Most software fails at the seam between <em>what people see</em> and what holds it up.</h2>
-<p class="body" style="margin-top:18px">I work on both sides of that seam. I ship production apps across the UAE and Sudan — enterprise platforms, smart parking, healthcare and property technology — where the interface has to stay simple and the system underneath has to survive real traffic, real payments and real users.</p>
+<p class="body" style="margin-top:18px">I am a Flutter Engineer, and I work on both sides of that seam. I ship production iOS and Android apps across the UAE and Sudan — wearables and wellness, smart parking, enterprise platforms, healthcare and property technology — built on BLoC and Clean Architecture, and released through the App Store and Google Play. The backend and web work behind them is what keeps the interface honest.</p>
 </div>
 </div>
 <figure class="portrait">
@@ -1191,13 +1298,56 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 <div class="arch" id="arch"></div>
 </div>
 </section>
+<!-- ═══════ 005 WORK · CAVE HEALTH ═══════ -->
+<section class="scene chapter" id="health" style="--len:5">
+<div class="pin">
+<div aria-hidden="true" class="health-glow"></div>
+<svg aria-hidden="true" class="health-rings" viewBox="0 0 200 200">
+<circle class="trk" cx="100" cy="100" r="80"></circle>
+<circle class="trk" cx="100" cy="100" r="63"></circle>
+<circle class="move" cx="100" cy="100" r="80"></circle>
+<circle class="rest" cx="100" cy="100" r="63"></circle>
+</svg>
+<svg aria-hidden="true" class="health-ecg" preserveAspectRatio="none" viewBox="0 0 1200 120">
+<path d="M0.0,60.0 L30.0,60.0 L39.0,55.0 L48.0,60.0 L66.0,60.0 L70.5,67.0 L75.0,30.0 L79.5,74.0 L84.0,60.0 L102.0,60.0 L111.0,51.0 L120.0,58.0 L129.0,60.0 L150.0,60.0 L150.0,60.0 L180.0,60.0 L189.0,55.0 L198.0,60.0 L216.0,60.0 L220.5,67.0 L225.0,30.0 L229.5,74.0 L234.0,60.0 L252.0,60.0 L261.0,51.0 L270.0,58.0 L279.0,60.0 L300.0,60.0 L300.0,60.0 L330.0,60.0 L339.0,55.0 L348.0,60.0 L366.0,60.0 L370.5,67.0 L375.0,30.0 L379.5,74.0 L384.0,60.0 L402.0,60.0 L411.0,51.0 L420.0,58.0 L429.0,60.0 L450.0,60.0 L450.0,60.0 L480.0,60.0 L489.0,55.0 L498.0,60.0 L516.0,60.0 L520.5,67.0 L525.0,30.0 L529.5,74.0 L534.0,60.0 L552.0,60.0 L561.0,51.0 L570.0,58.0 L579.0,60.0 L600.0,60.0 L600.0,60.0 L630.0,60.0 L639.0,55.0 L648.0,60.0 L666.0,60.0 L670.5,67.0 L675.0,30.0 L679.5,74.0 L684.0,60.0 L702.0,60.0 L711.0,51.0 L720.0,58.0 L729.0,60.0 L750.0,60.0 L750.0,60.0 L780.0,60.0 L789.0,55.0 L798.0,60.0 L816.0,60.0 L820.5,67.0 L825.0,30.0 L829.5,74.0 L834.0,60.0 L852.0,60.0 L861.0,51.0 L870.0,58.0 L879.0,60.0 L900.0,60.0 L900.0,60.0 L930.0,60.0 L939.0,55.0 L948.0,60.0 L966.0,60.0 L970.5,67.0 L975.0,30.0 L979.5,74.0 L984.0,60.0 L1002.0,60.0 L1011.0,51.0 L1020.0,58.0 L1029.0,60.0 L1050.0,60.0 L1050.0,60.0 L1080.0,60.0 L1089.0,55.0 L1098.0,60.0 L1116.0,60.0 L1120.5,67.0 L1125.0,30.0 L1129.5,74.0 L1134.0,60.0 L1152.0,60.0 L1161.0,51.0 L1170.0,58.0 L1179.0,60.0 L1200.0,60.0"></path>
+</svg>
+<div class="chapter-head">
+<span class="idx">Work / 01</span>
+<span class="mono">Wearable wellness companion</span>
+</div>
+<h2 class="display chapter-title chapter-name">Cave Health</h2>
+<div class="chapter-spec">
+<div class="spec">
+<div><b>Flutter Engineer</b><span>Role</span></div>
+<div><b>iOS · Android</b><span>Platform</span></div>
+<div><b>Wearable companion</b><span>Type</span></div>
+<div><b>Production</b><span>Status</span></div>
+</div>
+</div>
+<div aria-hidden="true" class="health-metrics"><b style="left:9%;top:30%"><em>Heart rate</em><i>bpm</i></b><b style="left:15%;top:64%"><em>SpO₂</em><i>%</i></b><b style="right:31%;top:22%"><em>Stress</em><i>index</i></b><b style="left:6%;top:47%"><em>Temperature</em><i>°C</i></b><b style="right:26%;bottom:30%"><em>Sleep</em><i>hours</i></b><b style="left:20%;bottom:24%"><em>Steps</em><i>goal</i></b></div>
+<div aria-hidden="true" class="health-stage"><div class="health-devices"><div class="device d1"><div class="screen"><img alt="Cave Health wellness overview — steps, calories, distance, SpO2 and heart rate" class="on" decoding="async" loading="lazy" src="assets/cave-health-overview.webp"/><img alt="Cave Health vitals screen — stress, SpO2 and temperature with on-demand measurement" decoding="async" loading="lazy" src="assets/cave-health-vitals.webp"/><img alt="Cave Health activity screen — step goal, workout history and activity logging" decoding="async" loading="lazy" src="assets/cave-health-activity.webp"/><img alt="Cave Health profile screen — paired device, health goals and appearance settings" decoding="async" loading="lazy" src="assets/cave-health-profile.webp"/></div><div class="island"></div><div class="glass"></div><div class="shadow"></div></div><div class="device d2"><div class="screen"><img alt="Cave Health wellness overview — steps, calories, distance, SpO2 and heart rate" class="on" decoding="async" loading="lazy" src="assets/cave-health-overview.webp"/><img alt="Cave Health vitals screen — stress, SpO2 and temperature with on-demand measurement" decoding="async" loading="lazy" src="assets/cave-health-vitals.webp"/><img alt="Cave Health activity screen — step goal, workout history and activity logging" decoding="async" loading="lazy" src="assets/cave-health-activity.webp"/><img alt="Cave Health profile screen — paired device, health goals and appearance settings" decoding="async" loading="lazy" src="assets/cave-health-profile.webp"/></div><div class="island"></div><div class="glass"></div><div class="shadow"></div></div><div class="device d3"><div class="screen"><img alt="Cave Health wellness overview — steps, calories, distance, SpO2 and heart rate" class="on" decoding="async" loading="lazy" src="assets/cave-health-overview.webp"/><img alt="Cave Health vitals screen — stress, SpO2 and temperature with on-demand measurement" decoding="async" loading="lazy" src="assets/cave-health-vitals.webp"/><img alt="Cave Health activity screen — step goal, workout history and activity logging" decoding="async" loading="lazy" src="assets/cave-health-activity.webp"/><img alt="Cave Health profile screen — paired device, health goals and appearance settings" decoding="async" loading="lazy" src="assets/cave-health-profile.webp"/></div><div class="island"></div><div class="glass"></div><div class="shadow"></div></div></div></div>
+<div aria-hidden="true" class="health-watch"><svg viewBox="0 0 120 178" xmlns="http://www.w3.org/2000/svg"><rect class="band" x="40" y="2" width="40" height="46" rx="12"></rect><rect class="band" x="40" y="130" width="40" height="46" rx="12"></rect><rect class="shell" x="17" y="38" width="86" height="102" rx="26"></rect><rect class="face" x="24" y="45" width="72" height="88" rx="21"></rect><circle class="arc a1" cx="60" cy="89" r="25"></circle><circle class="arc a2" cx="60" cy="89" r="16"></circle></svg></div>
+<div class="health-copy">
+<p class="lead">Cave Health is the Flutter companion application for the Cave smartwatch. Activity and step goals, sleep history, heart rate, SpO₂, stress and temperature readings, on-demand measurements and workout logging — the wearable’s data gathered into one mobile experience.</p>
+<div class="health-spec">
+<div><b>Role</b><span>Flutter development — mobile interface, state and smartwatch integration.</span></div>
+<div><b>System</b><span>Wellness dashboard, activity tracking and step goals, sleep history, heart rate, SpO₂, stress and temperature readings, on-demand measurement and workout logging.</span></div>
+<div><b>Stack</b><span>Flutter · Dart · Mobile integrations · Wearable / smartwatch integration</span></div>
+</div>
+<button class="cta mag" data-case="health" data-cur="Explore" type="button">Explore case study <i></i></button>
+<div class="storelinks"><a aria-label="Cave Health on Google Play (opens in a new tab)" data-cur="Open" href="https://play.google.com/store/apps/details?id=com.cavehealth" rel="noopener noreferrer" target="_blank">Google Play ↗</a></div>
+<p class="health-note">Phone screens are the real application. Rings, pulse trace and watch outline are decorative.</p>
+</div>
+<div aria-hidden="true" class="shot-index"><i></i><i></i><i></i><i></i></div>
+</div>
+</section>
 <!-- ═══════ 005 WORK · IPARK ═══════ -->
 <section class="scene chapter" id="ipark" style="--len:5.4">
 <div class="pin">
 <canvas aria-hidden="true" class="bg" id="c-city"></canvas>
 <div aria-hidden="true" class="scrim left"></div>
 <div class="chapter-head">
-<span class="idx">Work / 01</span>
+<span class="idx">Work / 02</span>
 <span class="mono">Smart parking — UAE &amp; KSA</span>
 </div>
 <h2 class="display chapter-title chapter-name">iPark</h2>
@@ -1242,7 +1392,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 </div>
 <p class="body">iPark turns parking into a live digital flow: map-based zone discovery, vehicle selection, server-synchronised sessions, Live Activities, fines, payment history and wallet/payment integrations. I worked on the Flutter front end, API migration and production delivery across UAE and KSA use cases.</p>
 <button class="cta mag" data-case="ipark" data-cur="Explore" type="button">Explore case study <i></i></button>
-<div class="storelinks"><a data-cur="Open" href="https://apps.apple.com/us/app/ipark-app/id6636482473" rel="noopener" target="_blank">App Store ↗</a><a data-cur="Open" href="https://play.google.com/store/apps/details?id=cave.ipark&amp;hl=en" rel="noopener" target="_blank">Google Play ↗</a><a data-cur="Open" href="https://user.ipark-ksa.com/ar" rel="noopener" target="_blank">Live web ↗</a></div>
+<div class="storelinks"><a data-cur="Open" href="https://apps.apple.com/us/app/ipark-app/id6636482473" rel="noopener noreferrer" target="_blank">App Store ↗</a><a data-cur="Open" href="https://play.google.com/store/apps/details?id=cave.ipark&amp;hl=en" rel="noopener noreferrer" target="_blank">Google Play ↗</a><a data-cur="Open" href="https://user.ipark-ksa.com/ar" rel="noopener noreferrer" target="_blank">Live web ↗</a></div>
 </div>
 <div aria-hidden="true" class="syslabels">
 <b><em>Server time</em> — session of record</b>
@@ -1256,7 +1406,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 <section class="scene chapter" id="cave" style="--len:5">
 <div class="pin">
 <div class="chapter-head">
-<span class="idx">Work / 02</span>
+<span class="idx">Work / 03</span>
 <span class="mono">Enterprise operating system</span>
 </div>
 <svg aria-hidden="true" class="orbit" id="cave-lines" preserveaspectratio="none" viewbox="0 0 100 100"></svg>
@@ -1270,7 +1420,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 <h2 class="display chapter-title" style="font-size:clamp(2.2rem,8vw,6rem)">Cave</h2>
 <p class="body" style="margin:16px auto 0;text-align:center">Chat, documents, approvals, payroll, attendance, calls, maps and configurable navigation — one Flutter application carrying a company’s daily workflows.</p>
 <button class="cta mag" data-case="cave" data-cur="Explore" type="button">Explore case study <i></i></button>
-<div class="storelinks cave-links"><a data-cur="Open" href="https://apps.apple.com/us/app/cave-app/id1660221643" rel="noopener" target="_blank">App Store ↗</a><a data-cur="Open" href="https://play.google.com/store/apps/details?id=com.caved.app&amp;hl=en" rel="noopener" target="_blank">Google Play ↗</a><a data-cur="Open" href="https://cave.business/" rel="noopener" target="_blank">Website ↗</a></div></div>
+<div class="storelinks cave-links"><a data-cur="Open" href="https://apps.apple.com/us/app/cave-app/id1660221643" rel="noopener noreferrer" target="_blank">App Store ↗</a><a data-cur="Open" href="https://play.google.com/store/apps/details?id=com.caved.app&amp;hl=en" rel="noopener noreferrer" target="_blank">Google Play ↗</a><a data-cur="Open" href="https://cave.business/" rel="noopener noreferrer" target="_blank">Website ↗</a></div></div>
 <!-- documents moment -->
 <div aria-hidden="true" class="docs">
 <div class="inner">
@@ -1301,7 +1451,7 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 <div class="pin">
 <canvas aria-hidden="true" class="bg" id="c-face"></canvas>
 <div class="chapter-head">
-<span class="idx">Work / 03</span>
+<span class="idx">Work / 04</span>
 <span class="mono">Computer vision &amp; access control</span>
 </div>
 <span class="demo-tag">Demo visualization</span>
@@ -1355,8 +1505,8 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 <p class="mono" style="margin-bottom:14px">The new toolchain</p>
 <h2 class="display" style="font-size:clamp(1.8rem,5.4vw,3.8rem);line-height:1">Engineering,<br/>augmented.</h2>
 <div class="body-copy">
-<p class="body" style="margin-top:20px">I use AI as part of the engineering system — to explore architecture, read codebases larger than any one session, accelerate refactoring, generate tests, hunt bugs and shorten the distance between an idea and production. The judgement stays mine: every output is reviewed before it merges.</p>
-<p class="body" style="margin-top:12px">The skill that actually matters is context. Choosing what the model sees, budgeting tokens across a large repository, and staging multi-step work so the answer is still right on the tenth file.</p>
+<p class="body" style="margin-top:20px">I use AI as part of the engineering system — repository-scale code analysis, architecture reasoning, debugging, refactoring, test generation and technical documentation. Claude and Claude Code for reading and reasoning across a whole repository, ChatGPT and Codex for implementation, Gemini and Google AI Studio for experiments, Cursor and GitHub Copilot in the editor, MCP for wiring tools to context. AI accelerates the work; engineering judgement and human verification stay part of every production change.</p>
+<p class="body" style="margin-top:12px">The skill that actually matters is context: choosing what the model sees, selecting scope, budgeting tokens across a large repository, comparing outputs between models, and staging multi-step work so the answer is still right on the tenth file. Nothing merges unreviewed.</p>
 </div>
 </div>
 <div class="roles" id="roles"></div>
@@ -1395,12 +1545,12 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 <div class="wrap">
 <p class="mono" style="margin-bottom:26px">Verified numbers</p>
 <div class="figs">
-<div class="fig"><b data-count="4">0</b><span>years shipping production software across mobile, web and backend.</span></div>
+<div class="fig"><b data-count="4" data-suffix="+">0</b><span>years shipping production software — Flutter first, with web and backend behind it.</span></div>
 <div class="fig"><b data-count="8" data-suffix="+">0</b><span>cross-platform apps delivered end to end at Infotech, Khartoum.</span></div>
 <div class="fig"><b data-count="25">0</b><span>document endpoints integrated in Cave, up from 6 before the migration.</span></div>
 <div class="fig"><b data-count="58">0</b><span>automated tests on the rebuilt Documents feature, zero analyzer errors.</span></div>
 <div class="fig"><b data-count="10" data-suffix="×">0</b><span>faster queries at Estheva — roughly 2,000 ms down to 200 ms.</span></div>
-<div class="fig"><b data-count="5" data-suffix="+">0</b><span>production product systems represented across mobile, web and backend in this portfolio.</span></div>
+<div class="fig"><b data-count="6" data-suffix="+">0</b><span>production product systems represented across mobile, web and backend in this portfolio.</span></div>
 </div>
 </div>
 </section>
@@ -1413,9 +1563,9 @@ html::-webkit-scrollbar,body::-webkit-scrollbar{width:0;height:0;display:none}
 <p class="talk">Let's talk<i aria-hidden="true"></i></p>
 <div class="links">
 <a data-cur="Write" href="mailto:gasan1288@gmail.com">Email</a>
-<a data-cur="Open" href="https://www.linkedin.com/in/gasan-mansour" rel="noopener" target="_blank">LinkedIn</a>
-<a data-cur="Open" href="https://github.com/Gasan33" rel="noopener" target="_blank">GitHub</a>
-<a data-cur="Chat" href="https://wa.me/971545671677" rel="noopener" target="_blank">WhatsApp</a>
+<a data-cur="Open" href="https://www.linkedin.com/in/gasan-mansour" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+<a data-cur="Open" href="https://github.com/Gasan33" rel="noopener noreferrer" target="_blank">GitHub</a>
+<a data-cur="Chat" href="https://wa.me/971545671677" rel="noopener noreferrer" target="_blank">WhatsApp</a>
 <a data-cur="Get" download="Gasan_Omer_CV.pdf" href="./Gasan_Omer_CV.pdf" id="cv-link">Download CV</a>
 </div>
 </div>
@@ -1523,7 +1673,9 @@ A.tick.push((t)=>{for(const r of A.canvases)if(r.active&&r.draw)r.draw(r,t)});
     ['Implementation',      'OpenAI Codex'],
     ['Research',            'ChatGPT'],
     ['Experiments',         'Google AI Studio'],
-    ['Multimodal',          'Gemini']
+    ['Multimodal',          'Gemini'],
+    ['In-editor',           'Cursor · Copilot'],
+    ['Tool context',        'MCP']
   ];
 
   const STOPS = [{"y":"2021","t":"Infotech — Khartoum","p":"First production Flutter work — cross-platform apps shipped end to end.","env":"khartoum"},{"y":"2023","t":"Move to the UAE","p":"From standalone mobile apps to enterprise and product engineering.","env":"uae"},{"y":"2024","t":"ASR · Estheva · Vactals","p":"Healthcare and property products across Flutter, Laravel, React and clean mobile architecture.","env":"uae"},{"y":"2025","t":"Cave Technologies","p":"Cave and iPark: enterprise workflows, real-time systems, payments, maps and large-scale refactoring.","env":"city-near"},{"y":"2026","t":"Now","p":"Production engineering accelerated by Claude, Claude Code, ChatGPT, Codex, Gemini and Google AI Studio.","env":"city-near","now":true}];
@@ -1589,8 +1741,8 @@ A.tick.push((t)=>{for(const r of A.canvases)if(r.active&&r.draw)r.draw(r,t)});
     </div>`).join('');
 
   q('#gal').innerHTML = GALLERY.map((p, i) => {
-    const store = p.store ? `<a class="product-link" href="${p.store}" target="_blank" rel="noopener" data-cur="Open">${p.storeLabel || 'Open ↗'}</a>` : '';
-    const web = p.web ? `<a class="product-link" href="${p.web}" target="_blank" rel="noopener" data-cur="Open">Website ↗</a>` : '';
+    const store = p.store ? `<a class="product-link" href="${p.store}" target="_blank" rel="noopener noreferrer" data-cur="Open">${p.storeLabel || 'Open ↗'}</a>` : '';
+    const web = p.web ? `<a class="product-link" href="${p.web}" target="_blank" rel="noopener noreferrer" data-cur="Open">Website ↗</a>` : '';
     return `<div class="row" role="group" data-img="${p.img}" data-i="${i}">
       <h3>${p.n}</h3>
       <div class="meta"><p>${p.d}</p><p>${p.tags}</p><p class="actions"><button class="mini-case" type="button" data-case="${p.key}" data-cur="Explore">Case study</button>${store}${web}</p></div>
@@ -1977,8 +2129,8 @@ A.tick.push(t=>{const doc=document.documentElement,sp=doc.scrollTop/Math.max(1,d
 // gallery image preview
 const pv=q('.preview'),pvi=pv&&pv.querySelector('img');let x=innerWidth/2,y=innerHeight/2,tx=x,ty=y;addEventListener('mousemove',e=>{tx=e.clientX;ty=e.clientY},{passive:true});function tick(){x+=(tx-x)*.16;y+=(ty-y)*.16;if(pv)pv.style.transform=`translate3d(${x}px,${y}px,0)`;requestAnimationFrame(tick)}tick();
 qa('.gal .row').forEach(row=>{row.addEventListener('mouseenter',()=>{if(!pv||matchMedia('(pointer:coarse)').matches)return;pvi.src=row.dataset.img;pv.style.opacity='1'});row.addEventListener('mouseleave',()=>{if(pv)pv.style.opacity='0'});row.addEventListener('click',()=>{if(innerWidth>900||row.tagName==='A')return;row.classList.toggle('open');const s=row.querySelector('.shot');if(s)s.style.height=row.classList.contains('open')?'280px':'0'})});
-const CASES=window.CASES={"ipark":{"title":"iPark — Smart Parking Platform","cols":[["Role","Frontend Developer — Flutter mobile engineering, Next.js web flows, API integration and production release."],["System","Interactive parking maps, vehicle flows, server-synchronised sessions, fines, payment history, Live Activities and multi-region behavior."],["Stack","Flutter · BLoC · REST APIs · Next.js · Maps · Payments · iOS/Android release workflows"]],"images":["assets/img-07.webp","assets/img-08.webp","assets/img-18.webp","assets/img-09.webp","assets/img-19.webp","assets/img-20.webp"],"links":[["App Store","https://apps.apple.com/us/app/ipark-app/id6636482473"],["Google Play","https://play.google.com/store/apps/details?id=cave.ipark&hl=en"],["Live web","https://user.ipark-ksa.com/ar"]]},"cave":{"title":"Cave — Enterprise Operating System","cols":[["Role","Frontend Developer — Flutter architecture, modernization and production feature delivery."],["System","Configurable enterprise modules spanning documents, payroll, attendance, maps, communication, approvals and real-time workflows."],["Migration","Documents moved from legacy code to feature-based BLoC/Clean Architecture: 6 → 25 endpoints and 58 automated tests."]],"images":["assets/img-10.webp","assets/img-11.webp","assets/img-12.webp","assets/img-21.webp"],"links":[["App Store","https://apps.apple.com/us/app/cave-app/id1660221643"],["Google Play","https://play.google.com/store/apps/details?id=com.caved.app&hl=en"],["Website","https://cave.business/"]]},"estheva":{"title":"Estheva — Digital Clinic Platform","cols":[["Role","Full-Stack Developer — patient-facing Flutter experience plus web/backend product work."],["System","Service discovery, doctor profiles, appointment scheduling, messaging, location-based appointments and clinic workflows."],["Stack","Flutter · Laravel · Next.js · React · APIs · SQL"]],"images":["assets/img-15.webp","assets/img-22.webp","assets/img-23.webp","assets/img-24.webp","assets/img-25.webp"],"links":[]},"vactals":{"title":"Vactals — Holiday Rental Guest App","cols":[["Role","Frontend Mobile App Developer."],["System","Dubai property discovery, detailed listings, wishlists, booking flow, booking management and guest profiles."],["Stack","Flutter · REST APIs · Mobile product delivery"]],"images":["assets/img-16.webp","assets/img-26.webp","assets/img-27.webp","assets/img-28.webp"],"links":[["Google Play","https://play.google.com/store/apps/details?id=com.vactals.guest&hl=en"],["Website","https://www.vactals.com/locations"]]},"owner":{"title":"Vactals Owner — Property Operations App","cols":[["Role","Frontend Mobile App Developer."],["System","Owner dashboard, reservation calendar, statements, messaging, profile controls and multi-step property listing workflows."],["Stack","Flutter · REST APIs · Calendar & property operations"]],"images":["assets/img-17.webp","assets/img-29.webp","assets/img-30.webp","assets/img-31.webp","assets/img-32.webp","assets/img-33.webp"],"links":[["Google Play","https://play.google.com/store/apps/details?id=com.vactals.owner&hl=en"],["Website","https://www.vactals.com/locations"]]}};
-const modal=q('.case'),mh=q('.case h3'),mb=q('.case .body'),close=q('.case .x');let last=null;function openCase(k,btn){const c=CASES[k];if(!c)return;last=btn;mh.textContent=c.title;const shots=(c.images||[]).map((src,i)=>`<figure><img src="${src}" alt="${c.title} interface ${i+1}" loading="lazy" decoding="async"></figure>`).join('');const links=(c.links||[]).map(([label,href])=>`<a href="${href}" target="_blank" rel="noopener">${label} ↗</a>`).join('');mb.innerHTML='<div class="cols">'+c.cols.map(([h,p])=>`<section><h4>${h}</h4><p>${p}</p></section>`).join('')+'</div>'+(shots?`<div class="case-gallery">${shots}</div>`:'')+(links?`<div class="case-links">${links}</div>`:'');modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';close.focus()}function closeCase(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';last&&last.focus()}
+const CASES=window.CASES={"health":{"title":"Cave Health \u2014 Wearable Wellness Companion","cols":[["Role","Flutter Engineer \u2014 Flutter development across the mobile interface, state and smartwatch integration."],["System","Companion application for the Cave smartwatch: wellness dashboard, activity tracking and step goals, sleep history, heart rate, SpO\u2082, stress and temperature readings, on-demand measurement and workout logging."],["Stack","Flutter \u00b7 Dart \u00b7 Mobile integrations \u00b7 Wearable / smartwatch integration"]],"images":["assets/cave-health-overview.webp","assets/cave-health-vitals.webp","assets/cave-health-activity.webp","assets/cave-health-profile.webp"],"links":[["Google Play","https://play.google.com/store/apps/details?id=com.cavehealth"]]},"ipark":{"title":"iPark — Smart Parking Platform","cols":[["Role","Frontend Developer — Flutter mobile engineering, Next.js web flows, API integration and production release."],["System","Interactive parking maps, vehicle flows, server-synchronised sessions, fines, payment history, Live Activities and multi-region behavior."],["Stack","Flutter · BLoC · REST APIs · Next.js · Maps · Payments · iOS/Android release workflows"]],"images":["assets/img-07.webp","assets/img-08.webp","assets/img-18.webp","assets/img-09.webp","assets/img-19.webp","assets/img-20.webp"],"links":[["App Store","https://apps.apple.com/us/app/ipark-app/id6636482473"],["Google Play","https://play.google.com/store/apps/details?id=cave.ipark&hl=en"],["Live web","https://user.ipark-ksa.com/ar"]]},"cave":{"title":"Cave — Enterprise Operating System","cols":[["Role","Frontend Developer — Flutter architecture, modernization and production feature delivery."],["System","Configurable enterprise modules spanning documents, payroll, attendance, maps, communication, approvals and real-time workflows."],["Migration","Documents moved from legacy code to feature-based BLoC/Clean Architecture: 6 → 25 endpoints and 58 automated tests."]],"images":["assets/img-10.webp","assets/img-11.webp","assets/img-12.webp","assets/img-21.webp"],"links":[["App Store","https://apps.apple.com/us/app/cave-app/id1660221643"],["Google Play","https://play.google.com/store/apps/details?id=com.caved.app&hl=en"],["Website","https://cave.business/"]]},"estheva":{"title":"Estheva — Digital Clinic Platform","cols":[["Role","Full-Stack Developer — patient-facing Flutter experience plus web/backend product work."],["System","Service discovery, doctor profiles, appointment scheduling, messaging, location-based appointments and clinic workflows."],["Stack","Flutter · Laravel · Next.js · React · APIs · SQL"]],"images":["assets/img-15.webp","assets/img-22.webp","assets/img-23.webp","assets/img-24.webp","assets/img-25.webp"],"links":[]},"vactals":{"title":"Vactals — Holiday Rental Guest App","cols":[["Role","Frontend Mobile App Developer."],["System","Dubai property discovery, detailed listings, wishlists, booking flow, booking management and guest profiles."],["Stack","Flutter · REST APIs · Mobile product delivery"]],"images":["assets/img-16.webp","assets/img-26.webp","assets/img-27.webp","assets/img-28.webp"],"links":[["Google Play","https://play.google.com/store/apps/details?id=com.vactals.guest&hl=en"],["Website","https://www.vactals.com/locations"]]},"owner":{"title":"Vactals Owner — Property Operations App","cols":[["Role","Frontend Mobile App Developer."],["System","Owner dashboard, reservation calendar, statements, messaging, profile controls and multi-step property listing workflows."],["Stack","Flutter · REST APIs · Calendar & property operations"]],"images":["assets/img-17.webp","assets/img-29.webp","assets/img-30.webp","assets/img-31.webp","assets/img-32.webp","assets/img-33.webp"],"links":[["Google Play","https://play.google.com/store/apps/details?id=com.vactals.owner&hl=en"],["Website","https://www.vactals.com/locations"]]}};
+const modal=q('.case'),mh=q('.case h3'),mb=q('.case .body'),close=q('.case .x');let last=null;function openCase(k,btn){const c=CASES[k];if(!c)return;last=btn;mh.textContent=c.title;const shots=(c.images||[]).map((src,i)=>`<figure><img src="${src}" alt="${c.title} interface ${i+1}" loading="lazy" decoding="async"></figure>`).join('');const links=(c.links||[]).map(([label,href])=>`<a href="${href}" target="_blank" rel="noopener noreferrer">${label} ↗</a>`).join('');mb.innerHTML='<div class="cols">'+c.cols.map(([h,p])=>`<section><h4>${h}</h4><p>${p}</p></section>`).join('')+'</div>'+(shots?`<div class="case-gallery">${shots}</div>`:'')+(links?`<div class="case-links">${links}</div>`:'');modal.classList.add('open');modal.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';close.focus()}function closeCase(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');document.body.style.overflow='';last&&last.focus()}
 qa('[data-case]').forEach(b=>b.addEventListener('click',e=>{e.stopPropagation();openCase(b.dataset.case,b)}));close&&close.addEventListener('click',closeCase);addEventListener('keydown',e=>{if(e.key==='Escape'&&modal.classList.contains('open'))closeCase()});
 // magnetic CTA
 if(matchMedia('(hover:hover)').matches)qa('.mag').forEach(b=>{b.addEventListener('mousemove',e=>{const r=b.getBoundingClientRect();b.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.08}px,${(e.clientY-r.top-r.height/2)*.12}px)`});b.addEventListener('mouseleave',()=>b.style.transform='')});
@@ -2027,6 +2179,7 @@ const cv=q('#cv-link');if(cv){cv.href='./Gasan_Omer_CV.pdf';cv.setAttribute('dow
     ['identity',   'Identity'],
     ['stack',      'Stack'],
     ['depthscene', 'Systems'],
+    ['health',     'Cave Health'],
     ['ipark',      'iPark'],
     ['cave',       'Cave'],
     ['face',       'Vision'],
@@ -2251,13 +2404,13 @@ const cv=q('#cv-link');if(cv){cv.href='./Gasan_Omer_CV.pdf';cv.setAttribute('dow
   /* ════════ 2 · product chapters from the existing case data ════════ */
   var CASES = window.CASES || {};
   var PRODUCTS = [
-    { key: 'estheva', id: 'p-estheva', n: 'Estheva', idx: '04',
+    { key: 'estheva', id: 'p-estheva', n: 'Estheva', idx: '05',
       kicker: 'Healthcare · patient experience',
       lead: 'A clinic that people book the way they book anything else. Service discovery, doctor profiles, scheduling, messaging and location-based appointments — with the Laravel backend and the React dashboard behind the same product.' },
-    { key: 'vactals', id: 'p-vactals', n: 'Vactals', idx: '05',
+    { key: 'vactals', id: 'p-vactals', n: 'Vactals', idx: '06',
       kicker: 'Property · guest booking',
       lead: 'Dubai holiday rentals, from browsing to booked. Property discovery, detailed listings, wishlists, a booking flow that survives interruption, and guest booking management.' },
-    { key: 'owner',   id: 'p-owner',   n: 'Vactals Owner', idx: '06',
+    { key: 'owner',   id: 'p-owner',   n: 'Vactals Owner', idx: '07',
       kicker: 'Property · owner operations',
       lead: 'The other half of the same business: an owner dashboard, a reservation calendar, statements, messaging, and multi-step property listing workflows for the people renting the places out.' }
   ].filter(function (p) { return CASES[p.key]; });
@@ -2285,7 +2438,7 @@ const cv=q('#cv-link');if(cv){cv.href='./Gasan_Omer_CV.pdf';cv.setAttribute('dow
     };
 
     var links = (c.links || []).map(function (l) {
-      return '<a href="' + l[1] + '" target="_blank" rel="noopener" data-cur="Open">' +
+      return '<a href="' + l[1] + '" target="_blank" rel="noopener noreferrer" data-cur="Open">' +
              l[0] + ' \u2197</a>';
     }).join('') || '<span>Private case study</span>';
 
@@ -2375,7 +2528,7 @@ const cv=q('#cv-link');if(cv){cv.href='./Gasan_Omer_CV.pdf';cv.setAttribute('dow
                  (i + 1) + '" loading="lazy"></figure>';
         }).join('') + '</div>' +
         '<div class="case-links">' + (c.links || []).map(function (l) {
-          return '<a href="' + l[1] + '" target="_blank" rel="noopener">' + l[0] + ' \u2197</a>';
+          return '<a href="' + l[1] + '" target="_blank" rel="noopener noreferrer">' + l[0] + ' \u2197</a>';
         }).join('') + '</div>';
       open.classList.add('open');
       open.setAttribute('aria-hidden', 'false');
@@ -2718,6 +2871,143 @@ const cv=q('#cv-link');if(cv){cv.href='./Gasan_Omer_CV.pdf';cv.setAttribute('dow
     idxWrap.style.opacity = String(C((p - .2) / .1, 0, 1) * C(1 - (p - .56) / .06, 0, 1));
   }
   requestAnimationFrame(tick);
+})();
+</script>
+
+<script>
+/* ══════════════════════════════════════════════════════════════
+   CAVE HEALTH — scene choreography
+   Mirrors the product-chapter loop: the phones walk through the real
+   screens while the decorative rings, pulse trace and watch outline
+   open around them. No numbers are rendered — only labels and units.
+   ══════════════════════════════════════════════════════════════ */
+(function () {
+  'use strict';
+  var sec = document.getElementById('health');
+  if (!sec) return;
+
+  var reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var C    = function (v, a, b) { return v < a ? a : v > b ? b : v; };
+  var ease = function (t) { return 1 - Math.pow(1 - t, 3); };
+
+  var pin     = sec.querySelector('.pin'),
+      glow    = sec.querySelector('.health-glow'),
+      move    = sec.querySelector('.health-rings .move'),
+      rest    = sec.querySelector('.health-rings .rest'),
+      trace   = sec.querySelector('.health-ecg path'),
+      metrics = [].slice.call(sec.querySelectorAll('.health-metrics b')),
+      devices = sec.querySelector('.health-devices'),
+      watch   = sec.querySelector('.health-watch'),
+      arcs    = [].slice.call(sec.querySelectorAll('.health-watch .arc')),
+      specs   = [].slice.call(sec.querySelectorAll('.health-spec div')),
+      idxWrap = sec.querySelector('.shot-index'),
+      dots    = [].slice.call(sec.querySelectorAll('.shot-index i'));
+
+  var sets = [].slice.call(sec.querySelectorAll('.health-devices .device'))
+    .map(function (d) { return [].slice.call(d.querySelectorAll('img')); });
+  var COUNT = sets.length ? sets[0].length : 0;
+
+  /* dash lengths, measured rather than hard-coded so the SVG can change */
+  function circ(el) { return el ? 2 * Math.PI * (+el.getAttribute('r') || 0) : 0; }
+  var moveLen = circ(move), restLen = circ(rest);
+  var traceLen = 0;
+  try { traceLen = trace ? trace.getTotalLength() : 0; } catch (e) { traceLen = 0; }
+  var arcLens = arcs.map(circ);
+
+  function dash(el, len, frac) {
+    if (!el || !len) return;
+    el.style.strokeDasharray = len;
+    el.style.strokeDashoffset = String(len * (1 - frac));
+  }
+
+  /* ── reduced motion: one static, complete state ── */
+  if (reduced) {
+    dash(move, moveLen, 0.72);
+    dash(rest, restLen, 0.46);
+    for (var a = 0; a < arcs.length; a++) dash(arcs[a], arcLens[a], a ? 0.42 : 0.68);
+    for (var sp = 0; sp < specs.length; sp++) specs[sp].style.opacity = '1';
+    if (watch) watch.style.opacity = '1';
+    return;
+  }
+
+  var shot = -1;
+
+  function frame() {
+    requestAnimationFrame(frame);
+    var r = sec.getBoundingClientRect();
+    if (r.bottom < -80 || r.top > innerHeight + 80) return;
+
+    var q = C(-r.top / Math.max(1, r.height - innerHeight), 0, 1);
+    var e = ease(C(q / 0.55, 0, 1));
+
+    if (glow) glow.style.transform =
+      'translate(-50%,-50%) scale(' + (0.82 + q * 0.4) + ')';
+
+    /* rings open with the chapter, then hold */
+    dash(move, moveLen, ease(C((q - 0.06) / 0.5, 0, 1)) * 0.72);
+    dash(rest, restLen, ease(C((q - 0.14) / 0.5, 0, 1)) * 0.46);
+
+    /* the pulse trace draws itself across the scene */
+    if (trace && traceLen) {
+      trace.style.strokeDasharray = traceLen;
+      trace.style.strokeDashoffset =
+        String(traceLen * (1 - ease(C((q - 0.1) / 0.6, 0, 1))));
+      trace.parentNode.style.opacity =
+        String(0.55 * C((q - 0.08) / 0.14, 0, 1) * C(1 - (q - 0.82) / 0.12, 0, 1));
+    }
+
+    /* devices: same entrance language as the other product chapters */
+    if (devices) {
+      devices.style.transform =
+        'translate3d(0,' + ((1 - e) * 62 - q * 6 + 4) + '%,0) rotateY(' +
+        (-14 + q * 22) + 'deg) rotateX(' + (14 - q * 12) + 'deg) scale(' +
+        (0.92 + e * 0.08) + ')';
+      devices.style.opacity =
+        String(C(e * 1.4, 0, 1) * C(1 - (q - 0.86) / 0.12, 0, 1));
+    }
+
+    /* the watch outline arrives after the phones have settled */
+    if (watch) {
+      var wv = C((q - 0.3) / 0.18, 0, 1) * C(1 - (q - 0.84) / 0.1, 0, 1);
+      watch.style.opacity = String(wv);
+      watch.style.transform = 'translate3d(0,' + ((1 - wv) * 26) + 'px,0)';
+      for (var w = 0; w < arcs.length; w++) {
+        dash(arcs[w], arcLens[w],
+             ease(C((q - 0.34 - w * 0.06) / 0.3, 0, 1)) * (w ? 0.42 : 0.68));
+      }
+    }
+
+    /* labelled metrics — units only, never invented readings */
+    for (var m = 0; m < metrics.length; m++) {
+      var mv = C((q - (0.2 + m * 0.045)) / 0.12, 0, 1) * C(1 - (q - 0.78) / 0.1, 0, 1);
+      metrics[m].style.opacity = String(mv);
+      metrics[m].style.transform = 'translate3d(0,' + ((1 - mv) * 14) + 'px,0)';
+    }
+
+    for (var s2 = 0; s2 < specs.length; s2++) {
+      var v = C((q - (0.24 + s2 * 0.1)) / 0.16, 0, 1);
+      specs[s2].style.opacity = String(v);
+      specs[s2].style.transform = 'translate3d(0,' + ((1 - v) * 16) + 'px,0)';
+    }
+
+    /* walk the real screens */
+    if (COUNT) {
+      var i = Math.min(COUNT - 1, Math.floor(C((q - 0.12) / 0.72, 0, 0.999) * COUNT));
+      if (i !== shot) {
+        shot = i;
+        for (var d = 0; d < sets.length; d++) {
+          var set = sets[d], pick = (i + d) % set.length;
+          for (var k = 0; k < set.length; k++) set[k].classList.toggle('on', k === pick);
+        }
+        for (var dd = 0; dd < dots.length; dd++) dots[dd].classList.toggle('on', dd === i);
+      }
+      if (idxWrap) idxWrap.style.opacity =
+        String(C((q - 0.16) / 0.1, 0, 1) * C(1 - (q - 0.86) / 0.08, 0, 1));
+    }
+
+    if (pin) pin.style.opacity = String(C((1 - q) * 9, 0, 1));
+  }
+  requestAnimationFrame(frame);
 })();
 </script>
 

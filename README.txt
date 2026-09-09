@@ -1,4 +1,4 @@
-Gasan Omer — portfolio
+Gasan Omer - portfolio
 ======================
 
 WHAT CHANGED IN THIS BUILD
@@ -12,7 +12,7 @@ WHAT CHANGED IN THIS BUILD
   to 153 KB and the images load lazily.
 
 HOW TO DEPLOY
-  Upload the WHOLE folder (index.html + assets/). Keep them together —
+  Upload the WHOLE folder (index.html + assets/). Keep them together -
   the paths are relative.
 
   Netlify:  drag this folder onto netlify.com
@@ -23,5 +23,5 @@ LOCAL PREVIEW
   python3 -m http.server 8000     then open http://localhost:8000
 
 STILL MISSING
-  Gasan_Omer_CV.pdf — drop it next to index.html. Until it is there the
+  Gasan_Omer_CV.pdf - drop it next to index.html. Until it is there the
   Download CV button turns itself into "Request CV" and opens email.
